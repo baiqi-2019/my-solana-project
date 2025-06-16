@@ -1,0 +1,119 @@
+# Solana相关文件
+target/
+test-ledger/
+.anchor/
+deploy/
+dist/
+
+# Node.js依赖
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# TypeScript编译产物
+*.js.map
+*.d.ts.map
+lib/
+build/
+
+# Rust编译产物
+/target
+Cargo.lock
+# 但如果是库项目，可能需要保留Cargo.lock
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 编辑器相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux系统文件
+*~
+
+# 日志文件
+logs
+*.log
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage目录
+coverage/
+*.lcov
+
+# nyc测试覆盖率
+.nyc_output
+
+# Grunt临时文件夹
+.grunt
+
+# Bower依赖目录
+bower_components
+
+# node-waf配置
+.lock-wscript
+
+# 编译的二进制插件
+build/Release
+
+# 依赖目录
+node_modules/
+jspm_packages/
+
+# TypeScript v1声明文件
+typings/
+
+# 可选的npm缓存目录
+.npm
+
+# 可选的eslint缓存
+.eslintcache
+
+# 微信小程序缓存
+.tmp
+
+# 零时文件
+tmp/
+temp/
+
+# Anchor特定文件
+.anchor/
+deploy/
+migrations/*.ts
+
+# Solana CLI相关
+.config/
+
+# 密钥文件（重要：不要提交到版本控制）
+*.json
+!package.json
+!tsconfig.json
+!Anchor.toml
+!Cargo.toml
+
+# 重新包含重要的配置文件
+!.gitignore
+!README.md 
