@@ -2,7 +2,11 @@
   "license": "ISC",
   "scripts": {
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
+    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+    "counter:demo": "anchor test --skip-local-validator",
+    "counter:init": "echo '初始化计数器，请使用 anchor test --skip-local-validator'",
+    "counter:increment": "echo '增加计数器，请使用 anchor test --skip-local-validator'",
+    "counter:simple": "node -e \"console.log('🎯 计数器程序已部署!'); console.log('📖 使用方法: yarn counter:demo');\""
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.31.1"
