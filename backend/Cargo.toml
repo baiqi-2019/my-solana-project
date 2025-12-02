@@ -1,0 +1,53 @@
+[package]
+name = "solana-deploy-resume-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Web框架和异步运行时
+tokio = { version = "1.0", features = ["full"] }
+axum = { version = "0.7", features = ["ws", "multipart"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["fs", "cors"] }
+
+# Solana相关
+solana-client = "1.17"
+solana-sdk = "1.17"
+solana-program = "1.17"
+
+# 序列化和配置
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+config = "0.14"
+
+# 数据库和持久化
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "chrono", "uuid"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
+# 错误处理和日志
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# 时间处理
+chrono = { version = "0.4", features = ["serde"] }
+
+# HTTP客户端
+reqwest = { version = "0.11", features = ["json"] }
+
+# 文件处理
+tokio-util = { version = "0.7", features = ["io"] }
+futures-util = "0.3"
+
+# WebSocket支持
+socketioxide = "0.13"
+
+# 密码学和编码
+bs58 = "0.5"
+hex = "0.4"
+
+[dev-dependencies]
+tempfile = "3.0"
+tokio-test = "0.4" 
